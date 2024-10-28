@@ -1,0 +1,128 @@
+:root {
+  /**
+   * кольори 
+   */
+  --red-orange-crayola: hsl(0, 100%, 66%);
+  --space-cadet: hsl(249, 37%, 19%);
+  --pistachio: hsl(88, 50%, 60%);
+  --cultured: hsl(220, 13%, 95%);
+  --saffron: hsl(45, 91%, 58%);
+  --rhythm: hsl(240, 9%, 51%);
+  --white: hsl(0, 0%, 100%);
+
+  /**
+   * типографіка 
+   */
+  --fs-1: 46px;
+  --fs-2: 28px;
+  --fs-3: 18px;
+  --fs-4: 15px;
+  --fs-5: 14px;
+
+  /**
+   * відступи 
+   */
+  --px: 30px;
+  --py: 60px;
+
+  /**
+   * інше 
+   */
+  --default-transition: 0.75s ease;
+}
+
+/* Глобальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--space-cadet); /* Колір тексту (темно-сірий) */
+    background-color: var(--cultured); /* Колір фону (світло-зелений) */
+}
+
+/* Стилі для навігаційної панелі */
+.navbar {
+    background-color: var(--red-orange-crayola); /* Колір фону для навігаційної панелі (червоний) */
+}
+
+.nav-link {
+    color: var(--saffron); /* Колір тексту для посилань навігаційної панелі (жовтий) */
+}
+
+/* Стилі для пошукового поля */
+#search-input {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    color: var(--red-orange-crayola); /* Колір тексту (темно-сірий) */
+    background-color: var(--pistachio); /* Колір фону (світло-зелений) */
+    border: 1px solid var(--space-cadet); /* Колір обрамлення (темно-сірий) */
+    border-radius: 4px;
+}
+
+/* Стилі для пунктів меню */
+.menu-item {
+    margin-bottom: 20px;
+    margin-right: 10px; /* Відступ праворуч для пунктів меню (10px) */
+    background-color: var(--white); /* Колір фону (білий) */
+    border: 1px solid var(--space-cadet); /* Колір обрамлення (темно-сірий) */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь для картки */
+}
+
+.card-img-top {
+    height: 200px; /* Висота зображення */
+    object-fit: cover; /* Адаптація зображення до блоку */
+}
+
+/* Адаптивні стилі */
+@media (min-width: 576px) {
+    /* Для середнього розміру екранів */
+    .navbar-toggler {
+        display: inline-block; /* Показати кнопку для невеликих екранів */
+    }
+
+    .navbar-nav {
+        display: none; /* Приховати посилання навігації для середніх екранів */
+    }
+
+    #search-input {
+        width: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .menu-item {
+        max-width: calc(48% - 10px); /* Максимум 2 елементи в рядок з відступами */
+    }
+}
+
+@media (min-width: 768px) {
+    /* Для великих екранів */
+    .navbar-toggler {
+        display: none; /* Приховати кнопку для великих екранів */
+    }
+
+    .navbar-nav {
+        display: flex; /* Показати посилання навігації для великих екранів */
+    }
+
+    .menu-item {
+        max-width: calc(32% - 10px); /* Максимум 3 елементи в рядок з відступами */
+    }
+}
+
+@media (max-width: 767px) {
+    /* Для мобільних екранів */
+    .navbar-toggler {
+        display: inline-block; /* Показати кнопку для невеликих екранів */
+    }
+
+    .navbar-nav {
+        display: none; /* Приховати посилання навігації для мобільних екранів */
+    }
+
+    .menu-item {
+        width: 100%; /* Один елемент в рядок для мобільних екранів */
+    }
+}

@@ -1,0 +1,190 @@
+<html {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    touch-action: manipulation;
+    background-color: #f8f8e8; /* Світло-жовтий фон */
+}
+
+body {
+    touch-action: manipulation;
+}
+
+i {
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+i:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+/* Заголовок */
+header {
+    border-bottom: 1px solid #b0c4de; /* Світло-блакитний */
+    max-width: 700px;
+    background-color: #fff9d9; /* Теплий білий */
+}
+
+/* Меню */
+.menu-container {
+    display: flex;
+    border-bottom: 1px solid #b0c4de;
+    max-width: 700px;
+}
+
+.emoji-div {
+    margin-right: 20px;
+}
+
+.emoji {
+    font-size: 40px;
+    color: #87ceeb; /* Блакитний */
+}
+
+.menu-div {
+    width: 300px;
+}
+
+.button-div {
+    display: flex;
+    width: 100%;
+    max-width: 200px;
+    margin-right: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Футер */
+.footer-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8e8a1; /* М’який жовтий */
+    color: #004c8c; /* Темно-блакитний */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-width: 700px;
+}
+
+.footer-div1 {
+    display: flex;
+    align-items: center;
+}
+
+/* Кнопки */
+.remove-btn, .checkout-btn {
+    margin-left: 20px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #004c8c; /* Темно-блакитний */
+    color: #fff7e6; /* Світлий кремовий */
+    box-shadow: 4px 4px 4px rgba(245, 222, 179, 0.055);
+    font-weight: 700;
+    border: none;
+}
+
+.remove-btn:hover, .checkout-btn:hover {
+    background-color: #fff7e6;
+    color: #004c8c;
+    transition: 0.4s;
+    border: none;
+    cursor: pointer;
+}
+
+/* Інформація про замовлення */
+.total-div {
+    margin-bottom: 40px;
+    background-color: #ffd966; /* Яскравий жовтий */
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 720px;
+}
+
+/* Модальне вікно */
+#modal {
+    position: fixed;
+    background-color: #ffd966;
+    height: 550px;
+    width: 350px;
+    top: 10%;
+    left: 4%;
+    z-index: 2;
+    box-shadow: 0 20px 100px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.modal-full {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: fixed;
+}
+
+.close-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 200px;
+    border: 1px solid #004c8c;
+}
+
+form {
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-checkout-btn {
+    margin-top: 20px;
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #87cefa; /* Блакитний */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.modal-checkout-btn:hover {
+    cursor: pointer;
+    box-shadow: none;
+    scale: 0.98;
+    background-color: #b0e57c; /* Світло-зелений для натискання */
+}
+
+.modal-order-placed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.fa-check {
+    color: #228b22; /* Зелений */
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+}
